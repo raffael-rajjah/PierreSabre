@@ -21,13 +21,15 @@ public class HistoireTP4 {
 //		marco.parler("15 sous ! Je te remercie de généreux donateur!");
 //		marco.boire();
 		
-//		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "whisky", 30);
-//		yakuLeNoir.direBonjour();
-//		yakuLeNoir.extorquer(marco);
+		Yakuza yakuLeNoir = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
+		yakuLeNoir.direBonjour();
+		yakuLeNoir.extorquer(marco);
 		
 		Ronin roro = new Ronin("Roro", "shochu", 60);
 		roro.direBonjour();
 		roro.donner(marco);
+		
+		roro.provoquer(yakuLeNoir);
 		
 	}
 }
