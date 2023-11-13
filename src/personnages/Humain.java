@@ -64,8 +64,23 @@ public class Humain {
 	}
 	
 	private void memoriser(Humain autreHumain) {
-		memoire[nbConnaissance] = autreHumain;
-		nbConnaissance++;
+		
+		if(nbConnaissance >= memoire.length) {
+			for(int i = 0; i < nbConnaissance - 1; i++) {
+				
+				memoire[i] = memoire[i+1];
+				
+			}
+			
+			memoire[nbConnaissance - 1] = autreHumain;
+		}
+		
+		else {
+			memoire[nbConnaissance] = autreHumain;
+			nbConnaissance++;
+			
+		}
+		
 	}
 	
 	public void listerConnaissance() {
