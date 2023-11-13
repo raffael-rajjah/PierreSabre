@@ -12,11 +12,11 @@ public class Ronin extends Humain{
 		int perte = getArgent() / 10;
 		parler(beneficiaire.getNom() + " prend ces " + perte + " sous");
 		perdreArgent(perte);
-		beneficiaire.parler(perte + " sous ! Je te remercie gÃ©nÃ©reux donateur!");
+		beneficiaire.parler(perte + " sous ! Je te remercie généreux donateur!");
 	}
 	
 	public void provoquer(Yakuza adversaire) {
-		parler("Je t'ai retrouvÃ© vermine, tu vas payer pour ce que tu as fait Ã  ce pauvre marchand!");
+		parler("Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
 		if(honneur * 2 > adversaire.getReputation()) {
 		
 			parler("Je t'ai eu petit yakuza!");
